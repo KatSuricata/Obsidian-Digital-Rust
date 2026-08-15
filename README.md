@@ -10,7 +10,7 @@ This is the official Obsidian port of [Digital Rust](https://digitalrust.katsuri
 
 ### From the community directory
 
-Once accepted, Digital Rust will be installable directly from Obsidian via **Settings → Appearance → Themes → Manage**.
+Digital Rust can be installable directly from Obsidian via **Settings → Appearance → Themes → Manage**. [You can see it on the Obsidian theme directory here.](https://community.obsidian.md/themes/digital-rust)
 
 ### Manual
 
