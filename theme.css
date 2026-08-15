@@ -19,10 +19,9 @@ body {
 	font-variant-ligatures: common-ligatures discretionary-ligatures no-historical-ligatures contextual;
 	font-kerning: normal;
 	font-optical-sizing: auto;
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizelegibility;
 	hanging-punctuation: first last;
 	overflow-wrap: break-word;
-	word-break: break-word;
 	font-variant-numeric: oldstyle-nums proportional-nums slashed-zero;
 	orphans: 3;
 	widows: 3;
@@ -85,7 +84,7 @@ body {
 	--dr-text-link-hover:    var(--dr-fatal-error);
 	--dr-text-link-visited:  var(--dr-corrupted-cache);
 	--dr-text-on-accent:     var(--dr-ghost-pixel);
-	--dr-text-muted:         rgba(239, 213, 209, 0.5);
+	--dr-text-muted:         rgb(239 213 209 / 50%);
 
 	/* ── Semantic Accents ─────────────────────────────────────── */
 	--dr-accent:             var(--dr-rust);
@@ -103,14 +102,14 @@ body {
 	--dr-info:               var(--dr-dead-thread);
 
 	/* ── Badge wash tokens (spec: Badges & Tags) ─────────────── */
-	--dr-memory-leek-15:        rgba(143, 166, 103, 0.15);
-	--dr-memory-leek-30:        rgba(143, 166, 103, 0.3);
-	--dr-dead-thread-15:        rgba(111, 165, 160, 0.15);
-	--dr-dead-thread-30:        rgba(111, 165, 160, 0.3);
-	--dr-amber-alert-10:        rgba(191, 87, 71, 0.1);
-	--dr-amber-alert-25:        rgba(191, 87, 71, 0.25);
-	--dr-stack-overglow-15:     rgba(212, 167, 89, 0.15);
-	--dr-stack-overglow-30:     rgba(212, 167, 89, 0.3);
+	--dr-memory-leek-15:        rgb(143 166 103 / 15%);
+	--dr-memory-leek-30:        rgb(143 166 103 / 30%);
+	--dr-dead-thread-15:        rgb(111 165 160 / 15%);
+	--dr-dead-thread-30:        rgb(111 165 160 / 30%);
+	--dr-amber-alert-10:        rgb(191 87 71 / 10%);
+	--dr-amber-alert-25:        rgb(191 87 71 / 25%);
+	--dr-stack-overglow-15:     rgb(212 167 89 / 15%);
+	--dr-stack-overglow-30:     rgb(212 167 89 / 30%);
 
 	/* ── Semantic Border Colours ───────────────────────────────── */
 	--dr-border-color:        var(--dr-dark-packet);
@@ -123,12 +122,12 @@ body {
 	--dr-focus-ring-offset:  2px;
 
 	/* ── RGB Channels ─────────────────────────────────────────── */
-	--dr-bg-rgb:             17, 4, 2;
-	--dr-accent-rgb:         175, 46, 26;
-	--dr-border-rgb:         105, 27, 15;
-	--dr-success-rgb:       143, 166, 103;
-	--dr-error-rgb:         191, 87, 71;
-	--dr-warning-rgb:       212, 167, 89;
+	--dr-bg-rgb:             17 4 2;
+	--dr-accent-rgb:         175 46 26;
+	--dr-border-rgb:         105 27 15;
+	--dr-success-rgb:       143 166 103;
+	--dr-error-rgb:         191 87 71;
+	--dr-warning-rgb:       212 167 89;
 
 	/* ── Elevation & Shadow Tokens ────────────────────────────── */
 	--dr-shadow-offset-sm:         2px 2px 0 0 var(--dr-surface-highlight);
@@ -136,10 +135,10 @@ body {
 	--dr-shadow-offset-lg:         4px 4px 0 0 var(--dr-surface-highlight);
 	--dr-shadow-hover-md:          4px 4px 0 0 var(--dr-surface-highlight);
 	--dr-shadow-active:            0 0 0 0 var(--dr-surface-highlight);
-	--dr-shadow-glow-sm:           0 0 10px rgba(175, 46, 26, 0.4);
-	--dr-shadow-glow-md:           0 0 20px rgba(175, 46, 26, 0.4);
-	--dr-shadow-inner-highlight:   inset 0 1px 0 rgba(255, 255, 255, 0.1);
-	--dr-shadow-inner-lowlight:    inset 0 -1px 0 rgba(17, 4, 2, 0.6);
+	--dr-shadow-glow-sm:           0 0 10px rgb(175 46 26 / 40%);
+	--dr-shadow-glow-md:           0 0 20px rgb(175 46 26 / 40%);
+	--dr-shadow-inner-highlight:   inset 0 1px 0 rgb(255 255 255 / 10%);
+	--dr-shadow-inner-lowlight:    inset 0 -1px 0 rgb(17 4 2 / 60%);
 
 	/* ── Interaction Physics ───────────────────────────────────── */
 	--dr-press-hover:      translate(-2px, -2px);
@@ -159,7 +158,7 @@ body {
 	--dr-text-base:        1rem;
 
 	/* ── Texture / Z-Index ───────────────────────────────────── */
-	--dr-scanline:         rgba(175, 46, 26, 0.03);
+	--dr-scanline:         rgb(175 46 26 / 3%);
 	--dr-z-content:        0;
 	--dr-z-noise:          9999;
 
@@ -186,16 +185,16 @@ body {
 	--background-primary-alt:         var(--dr-core-meltdown);
 	--background-secondary:           var(--dr-null-pointer);
 	--background-secondary-alt:       var(--dr-bad-sector);
-	--background-modifier-hover:      rgba(var(--dr-border-rgb), 0.5);
-	--background-modifier-active:     rgba(var(--dr-border-rgb), 0.4);
+	--background-modifier-hover:      rgb(var(--dr-border-rgb) / 50%);
+	--background-modifier-active:     rgb(var(--dr-border-rgb) / 40%);
 	--background-modifier-active-hover: var(--dr-bad-sector);
 	--background-modifier-border:     var(--dr-dark-packet);
 	--background-modifier-border-hover: var(--dr-bad-sector);
 	--background-modifier-border-focus:var(--dr-stack-overglow);
-	--background-modifier-error:      rgba(var(--dr-error-rgb), 0.15);
-	--background-modifier-error-hover:rgba(var(--dr-error-rgb), 0.25);
-	--background-modifier-success:    rgba(var(--dr-success-rgb), 0.15);
-	--background-modifier-success-hover: rgba(var(--dr-success-rgb), 0.25);
+	--background-modifier-error:      rgb(var(--dr-error-rgb) / 15%);
+	--background-modifier-error-hover:rgb(var(--dr-error-rgb) / 25%);
+	--background-modifier-success:    rgb(var(--dr-success-rgb) / 15%);
+	--background-modifier-success-hover: rgb(var(--dr-success-rgb) / 25%);
 
 	/* ── Text ─────────────────────────────────────────────────── */
 	--text-normal:           var(--dr-ghost-pixel);
@@ -209,7 +208,7 @@ body {
 	--text-success:           var(--dr-memory-leek);
 	--text-accent:            var(--dr-rust);
 	--text-accent-hover:      var(--dr-firewall-breach);
-	--text-selection:         rgba(var(--dr-border-rgb), 0.7);
+	--text-selection:         rgb(var(--dr-border-rgb) / 70%);
 
 	/* ── Interactive / Accent ──────────────────────────────────── */
 	--interactive-normal:       var(--dr-core-meltdown);
@@ -223,12 +222,12 @@ body {
 	--scrollbar-active-thumb-bg: var(--dr-surface-active);
 
 	/* ── Highlight / Selection ─────────────────────────────────── */
-	--text-highlight-bg:      rgba(var(--dr-warning-rgb), 0.3);
-	--text-highlight-bg-active:rgba(var(--dr-warning-rgb), 0.5);
+	--text-highlight-bg:      rgb(var(--dr-warning-rgb) / 30%);
+	--text-highlight-bg-active:rgb(var(--dr-warning-rgb) / 50%);
 	--text-highlight-fg:      var(--dr-ghost-pixel);
 
 	/* ── Search ───────────────────────────────────────────────── */
-	--nav-item-background-highlight: rgba(var(--dr-border-rgb), 0.4);
+	--nav-item-background-highlight: rgb(var(--dr-border-rgb) / 40%);
 
 	/* ── Dividers ─────────────────────────────────────────────── */
 	--divider-color:          var(--dr-dark-packet);
@@ -293,7 +292,7 @@ body {
 
 	/* ── Mention ─────────────────────────────────────────────── */
 	--mention-color:         var(--dr-ghost-pixel);
-	--mention-background:    rgba(var(--dr-accent-rgb), 0.25);
+	--mention-background:    rgb(var(--dr-accent-rgb) / 25%);
 
 	/* ── Code ─────────────────────────────────────────────────── */
 	--code-normal:           var(--dr-memory-leek);
@@ -310,6 +309,7 @@ body {
 	--code-value:            var(--dr-thermal-throttle);
 
 	/* ── Blockquotes ──────────────────────────────────────────── */
+
 	/* ── Blockquote border: 3px Copper Trace (quote-marker colour) ── */
 	--blockquote-border-thickness: 3px;
 	--blockquote-border-color:  var(--dr-copper-trace);
@@ -360,7 +360,7 @@ body {
 	--punctuation-color:      var(--dr-copper-trace);
 
 	/* ── Embedded notes ────────────────────────────────────────── */
-	--embed-background:       rgba(var(--dr-bg-rgb), 0.5);
+	--embed-background:       rgb(var(--dr-bg-rgb) / 50%);
 	--embed-border-left:      2px solid var(--dr-dark-packet);
 
 	/* ── Table ───────────────────────────────────────────────── */
@@ -376,7 +376,7 @@ body {
 
 	/* ── Suggestion ──────────────────────────────────────────── */
 	--prompt-suggestion-color:  var(--dr-phosphor-smoke);
-	--prompt-suggestion-highlight-background: rgba(var(--dr-warning-rgb), 0.2);
+	--prompt-suggestion-highlight-background: rgb(var(--dr-warning-rgb) / 20%);
 
 	/* ── Misc / Composites ──────────────────────────────────── */
 	--drag-ghost-background:          var(--dr-core-meltdown);
@@ -392,7 +392,7 @@ body {
 	--search-result-file-title-color: var(--dr-ghost-pixel);
 	--search-result-file-match-text-color: var(--dr-ghost-pixel);
 	--search-result-file-match:
-		background rgba(var(--dr-warning-rgb), 0.25);
+		background rgb(var(--dr-warning-rgb) / 25%);
 	--nav-file-tag-color:             var(--dr-stack-overglow-dim);
 	--graph-line:                     var(--dr-bad-sector);
 	--graph-node:                     var(--dr-phantom-current);
@@ -402,9 +402,9 @@ body {
 	--graph-node-unresolved:          var(--dr-thermal-throttle-dim);
 
 	/* ── Fonts ──────────────────────────────────────────────── */
-	--font-text-theme:     Optima, 'Optima Nova', Candara, 'Gill Sans Nova', 'Gill Sans', Calibri, Ubuntu, Cantarell, 'Noto Sans', 'Trebuchet MS', sans-serif;
-	--font-monospace-theme: 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Cascadia Mono', 'JetBrains Mono', 'Source Code Pro', Consolas, Menlo, Monaco, 'Ubuntu Mono', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
-	--font-interface-theme: Optima, 'Optima Nova', Candara, 'Gill Sans Nova', 'Gill Sans', Calibri, Ubuntu, Cantarell, 'Noto Sans', 'Trebuchet MS', sans-serif;
+	--font-text-theme: 'Optima', 'Optima Nova', 'Candara', 'Gill Sans Nova', 'Gill Sans', 'Calibri', 'Ubuntu', 'Cantarell', 'Noto Sans', 'Trebuchet MS', sans-serif;
+	--font-monospace-theme: 'Fira Code', 'Fira Mono', 'Cascadia Code', 'Cascadia Mono', 'JetBrains Mono', 'Source Code Pro', 'Consolas', 'Menlo', 'Monaco', 'Ubuntu Mono', 'Liberation Mono', 'DejaVu Sans Mono', monospace;
+	--font-interface-theme: 'Optima', 'Optima Nova', 'Candara', 'Gill Sans Nova', 'Gill Sans', 'Calibri', 'Ubuntu', 'Cantarell', 'Noto Sans', 'Trebuchet MS', sans-serif;
 
 	/* ── Font sizes ─────────────────────────────────────────── */
 	--font-smallest:     0.8em;
@@ -422,14 +422,12 @@ body {
 	--h4-size:  1.25em;
 	--h5-size:  1.12em;
 	--h6-size:  1em;
-
 	--h1-weight: 700;
 	--h2-weight: 700;
 	--h3-weight: 700;
 	--h4-weight: 700;
 	--h5-weight: 700;
 	--h6-weight: 700;
-
 	--heading-spacing: 0.1em;
 
 	/* ── Borders ────────────────────────────────────────────── */
@@ -586,6 +584,7 @@ em,
 }
 
 /* ── Links ─────────────────────────────────────────────────── */
+
 /* Internal links: Phantom Current, underline, 3px offset */
 .markdown-preview-view .internal-link,
 .cm-url .cm-link,
@@ -706,19 +705,20 @@ hr,
 }
 
 /* ── Highlight (mark) ─────────────────────────────────────── */
-.markdown-rendered mark,
-.markdown-preview-view mark,
-.cm-highlight,
 mark {
-	background: var(--text-highlight-bg) !important;
-	color: var(--text-highlight-fg) !important;
+	background: var(--text-highlight-bg);
+	color: var(--text-highlight-fg);
 	border-radius: 2px;
+	padding: 1px 3px;
 }
 
 .markdown-rendered mark,
 .markdown-preview-view mark,
-mark {
-	padding: 1px 3px;
+.cm-highlight,
+.cm-s-obsidian span.cm-highlight {
+	background: var(--text-highlight-bg);
+	color: var(--text-highlight-fg);
+	border-radius: 2px;
 }
 
 /* ── Hashtags & footnote refs → Dim Stack Overglow ─────────── */
@@ -1054,6 +1054,19 @@ button.mod-cta:active {
 	box-shadow: var(--dr-shadow-active);
 }
 
+/* ── Disabled — Bad Sector bg, muted text, no border shift,
+   no shadow, no transform; a dead switch does not click ────── */
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+	background: var(--dr-surface-highlight);
+	color: var(--dr-text-muted);
+	border-color: var(--dr-border-color);
+	box-shadow: none;
+	transform: none;
+	cursor: not-allowed;
+}
+
 /* ── Focus: keyboard focus and hover are independent — focus
    never removes the resting shadow ────────────────────────── */
 button:focus-visible:not(:hover) {
@@ -1069,19 +1082,6 @@ button.mod-cta:focus-visible:not(:hover) {
 		var(--dr-shadow-inner-highlight);
 }
 
-/* ── Disabled — Bad Sector bg, muted text, no border shift,
-   no shadow, no transform; a dead switch does not click ────── */
-button:disabled,
-button:disabled:hover,
-button:disabled:active {
-	background: var(--dr-surface-highlight);
-	color: var(--dr-text-muted);
-	border-color: var(--dr-border-color);
-	box-shadow: none;
-	transform: none;
-	cursor: not-allowed;
-}
-
 /* ── Warning button ────────────────────────────────────────── */
 button.mod-warning {
 	border-color: var(--dr-warning);
@@ -1093,6 +1093,7 @@ button.mod-warning:hover {
 	border-color: var(--dr-warning);
 	color: var(--dr-horizon);
 }
+
 /* ═══════════════════════════════════════════════════════════════
    §9  CARDS, PANELS, TOOLTIPS
    ═══════════════════════════════════════════════════════════════ */
@@ -1101,6 +1102,10 @@ button.mod-warning:hover {
 .search-result-file-match,
 .search-result-file-title {
 	border-radius: var(--dr-radius);
+}
+
+.search-result-file-match {
+	padding: var(--size-4-1) var(--size-4-2);
 }
 
 .search-result-file-match:hover {
@@ -1186,15 +1191,6 @@ textarea {
 		box-shadow var(--dr-transition-fast);
 }
 
-input[type="text"]:hover:not(:focus),
-input[type="search"]:hover:not(:focus),
-input[type="email"]:hover:not(:focus),
-input[type="password"]:hover:not(:focus),
-input[type="number"]:hover:not(:focus),
-textarea:hover:not(:focus) {
-	border-color: var(--dr-border-color);
-}
-
 input[type="text"]:focus,
 input[type="search"]:focus,
 input[type="email"]:focus,
@@ -1207,12 +1203,6 @@ textarea:focus {
 	box-shadow: none;
 }
 
-input::placeholder,
-textarea::placeholder {
-	color: var(--dr-text-muted);
-	font-style: italic;
-}
-
 /* Disabled wells: transparent border, muted text, no shadow */
 input:disabled,
 textarea:disabled {
@@ -1220,6 +1210,21 @@ textarea:disabled {
 	color: var(--dr-text-muted);
 	box-shadow: none;
 	cursor: not-allowed;
+}
+
+input[type="text"]:hover:not(:focus),
+input[type="search"]:hover:not(:focus),
+input[type="email"]:hover:not(:focus),
+input[type="password"]:hover:not(:focus),
+input[type="number"]:hover:not(:focus),
+textarea:hover:not(:focus) {
+	border-color: var(--dr-border-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--dr-text-muted);
+	font-style: italic;
 }
 
 /* ── :root input vars for plugin compat ───────────────────── */
@@ -1470,6 +1475,7 @@ textarea:disabled {
 .callout[data-callout="info"] {
 	border-left: 3px solid var(--dr-dead-thread);
 }
+
 .callout[data-callout="note"] .callout-title,
 .callout[data-callout="info"] .callout-title {
 	color: var(--dr-dead-thread);
@@ -1480,6 +1486,7 @@ textarea:disabled {
 .callout[data-callout="attention"] {
 	border-left: 3px solid var(--dr-stack-overglow);
 }
+
 .callout[data-callout="warning"] .callout-title,
 .callout[data-callout="caution"] .callout-title,
 .callout[data-callout="attention"] .callout-title {
@@ -1491,6 +1498,7 @@ textarea:disabled {
 .callout[data-callout="bug"] {
 	border-left: 3px solid var(--dr-amber-alert);
 }
+
 .callout[data-callout="error"] .callout-title,
 .callout[data-callout="danger"] .callout-title,
 .callout[data-callout="bug"] .callout-title {
@@ -1503,6 +1511,7 @@ textarea:disabled {
 .callout[data-callout="tip"] {
 	border-left: 3px solid var(--dr-memory-leek);
 }
+
 .callout[data-callout="success"] .callout-title,
 .callout[data-callout="check"] .callout-title,
 .callout[data-callout="done"] .callout-title,
@@ -1515,6 +1524,7 @@ textarea:disabled {
 .callout[data-callout="cite"] {
 	border-left: 3px solid var(--dr-copper-trace);
 }
+
 .callout[data-callout="example"] .callout-title,
 .callout[data-callout="quote"] .callout-title,
 .callout[data-callout="cite"] .callout-title {
@@ -1526,6 +1536,7 @@ textarea:disabled {
 .callout[data-callout="tldr"] {
 	border-left: 3px solid var(--dr-stack-overglow-dim);
 }
+
 .callout[data-callout="abstract"] .callout-title,
 .callout[data-callout="summary"] .callout-title,
 .callout[data-callout="tldr"] .callout-title {
@@ -1536,6 +1547,7 @@ textarea:disabled {
 .callout[data-callout="faq"] {
 	border-left: 3px solid var(--dr-stack-overglow-bright);
 }
+
 .callout[data-callout="question"] .callout-title,
 .callout[data-callout="faq"] .callout-title {
 	color: var(--dr-stack-overglow-bright);
@@ -1570,11 +1582,11 @@ textarea:disabled {
 
 /* Active line highlight → Core Meltdown at 50% */
 .cm-activeLine {
-	background: rgba(52, 13, 7, 0.5);
+	background: rgb(52 13 7 / 50%);
 }
 
 .cm-activeLineGutter {
-	background: rgba(52, 13, 7, 0.5);
+	background: rgb(52 13 7 / 50%);
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1614,11 +1626,6 @@ textarea:disabled {
    §23  SEARCH & REPLACE
    ═══════════════════════════════════════════════════════════════ */
 
-.search-result-file-match {
-	border-radius: var(--dr-radius);
-	padding: var(--size-4-1) var(--size-4-2);
-}
-
 .cm-searchMatch {
 	background: var(--text-highlight-bg);
 	color: var(--text-highlight-fg);
@@ -1632,13 +1639,13 @@ textarea:disabled {
 }
 
 /* Hide magnifying glass icon */
-.document-search-container .search-input-container::before,
-.search-input-container::before {
+.search-input-container::before,
+.document-search-container .search-input-container::before {
 	display: none;
 }
 
-.document-search-container .search-input-container input,
-.search-input-container input {
+.search-input-container input,
+.document-search-container .search-input-container input {
 	padding-inline-start: var(--size-4-2);
 }
 
@@ -1753,9 +1760,10 @@ textarea:disabled {
 		var(--dr-shadow-inner-highlight);
 }
 
-/* ── Semantic accent: optional 3px left border in the semantic
-   colour; auto-dismiss progress line along the bottom edge ──── */
-.notice:not(:has(.notice-message:empty)) {
+/* ── Semantic accent: 3px left border in the info colour;
+   auto-dismiss progress line along the bottom edge ────
+   (:has() deliberately avoided per Obsidian theme guidelines) ── */
+.notice {
 	border-left: 3px solid var(--dr-info);
 }
 
@@ -1846,6 +1854,7 @@ textarea:disabled {
 
 @media print {
 	body {
+		/* stylelint-disable-next-line color-named -- print always forces paper-white */
 		background: white;
 		color: #282828;
 	}
@@ -1925,7 +1934,7 @@ textarea:disabled {
    ═══════════════════════════════════════════════════════════════ */
 
 .is-flashing {
-	background-color: rgba(var(--dr-border-rgb), 0.5);
+	background-color: rgb(var(--dr-border-rgb) / 50%);
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1937,7 +1946,6 @@ textarea:disabled {
 
 progress {
 	appearance: none;
-	-webkit-appearance: none;
 	height: 8px;
 	border: 1px solid var(--dr-border-color-well);
 	border-radius: 2px;
