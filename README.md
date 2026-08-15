@@ -1,6 +1,6 @@
 # Digital Rust for Obsidian
 
-![Digital Rust](assets/banner.webp)
+![Digital Rust](screenshots/screenshot.png)
 
 Digital Rust is a warm, tech-dystopian colour scheme for [Obsidian](https://obsidian.md/), inspired by corrupted hardware and failing systems. Built around deep rust-copper tones with strategic pops of colour named after system failures, the theme embraces the beauty of digital decay while maintaining excellent readability.
 
@@ -43,11 +43,11 @@ Versions are published as GitHub releases via GitHub Actions:
 
 1. Bump the version in `package.json` and run `npm run version` to update `manifest.json` and `versions.json`.
 2. Commit and push, then push a tag matching the new version number (for example `git tag 1.0.1 && git push --tags`).
-3. The [release workflow](.github/workflows/release.yml) creates a draft release with `manifest.json` and `theme.css` attached — review and publish it.
+3. The [release workflow](.github/workflows/release.yml) creates a draft release with `manifest.json` and `theme.css` attached; review and publish it.
 
 ## Related
 
-- [Digital Rust design system](https://digitalrust.katsuricata.com/) — specification and ports for other applications.
+- [Digital Rust design system](https://digitalrust.katsuricata.com/): specification and ports for other applications.
 
 ## License
 
